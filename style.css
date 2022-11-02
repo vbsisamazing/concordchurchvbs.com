@@ -100,12 +100,12 @@ font-size: 20px;
 .columnh {
   float: left;
   width: 25%;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
