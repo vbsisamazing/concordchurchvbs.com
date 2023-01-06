@@ -1,29 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome icon (links) -->
+    <link rel="stylesheet" href="./FontAwesome files/fontawesome.css" />
+    <script src="./FontAwesome files/fontawesome.js"></script>
+    <!-- Styling css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Responsive header</title>
   </head>
   <body>
-    <center><div class="topnav">
-      <img class="topnav1" src="logo1.png" alt="rcmms">
-      <a class="active" href="index.html">Home</a>
-      <a href="register.html">Register</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="Merch.html">Merch</a>
-      <a href="contact.html">Contact</a>
-      <a href="back.html">Volunteer Back Acess</a>
-      <a href="https://www.facebook.com/ConcordChurchVBS/" target="_blank"> Facebook </a>
-        <a href="https://www.youtube.com/channel/UCPn0npVScm_kn9ESmf4cM1A" target="_blank"> YouTube </a>
+    <script>
+      const toggle = () => {
+        document.getElementById("nav").classList.toggle("navactive");
+      };
+    </script>
+    <header>
+      <div class="brand">
+        <span class="fab fa-github"></span>
+        <h1>CONCORD CHURCH</h1>
       </div>
-    </center>
-    <div class="header">
-      <h1><img src="Logo.png" alt="rcmms"> <br>CONCORD CHURCH </h1>
-      <h2>VACATION BIBLE SCHOOL</h2>
-      <h3> ROXBORO, NC </h3>
-      <hr>
-    </div>
+      <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+      <div class="navbar" id="nav">
+  
+        <ul>
+          <li>
+            <span class="fas fa-home" id="headIcon"></span>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <span class="fa fa-user-circle" id="headIcon"></span>
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <li>
+            <span class="fas fa-question-circle" id="headIcon"></span>
+            <a href="register.html">REGISTER</a>
+          </li>
+          <li>
+            <span class="fas fa-lock" id="headIcon"></span>
+            <a href="volunteer.html">VOLUNTEER</a>
+          </li>
+          <li>
+            <span class="fas fa-sign-out" id="headIcon"></span>
+            <a href="merchandise.html">MERCHANDISE</a>
+          </li>
+          <li>
+            <span class="fas fa-sign-out" id="headIcon"></span>
+            <a href="https://www.facebook.com/ConcordChurchVBS/" target="_blank">FB</a>
+          </li>
+          <li>
+            <span class="fas fa-sign-out" id="headIcon"></span>
+            <a href="https://www.youtube.com/channel/UCPn0npVScm_kn9ESmf4cM1A" target="_blank">YT</a>
+          </li>
+
+         
+        </ul>
+      </div>
+    </header>
+
+<div class="pageheads">
+    <br>
+    <h1 class="h1page"><img src="https://cdnservices.group.com/media/5590687/stellar-vbs-logo.png" alt="stellarlogo"> <br><center>CONCORD CHURCH </center></h1>
+    <h2>VACATION BIBLE SCHOOL</h2>
+    <h3> ROXBORO, NC </h3>
+    <br>
+  </div>
       
 <div class="col">
     <div class="row">
